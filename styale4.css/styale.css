@@ -1,0 +1,718 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* header*/
+
+.header{
+    width: 100%;
+    height: 120px;
+    background-color: #d4c9c9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 5%;
+}
+.header>span{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.btn{
+    display: inline-block;
+    cursor: pointer;
+}
+.btn > div{
+    width: 35px;
+    height: 5px;
+    background-color: #000;
+    margin: 6px 0px;
+    box-shadow: 0px 0px 4px transparent;
+    opacity: 1;
+    transform: translateY(0px) rotate(0deg);
+    -webkit-transform: translateY(0px) rotate(0deg);
+    transition: .6s ease all;
+    -webkit-transition: .6s ease all;
+}
+
+.btn:hover>div{
+    box-shadow: 0px 0px 4px #232525;
+}
+
+.btn_active > div:first-child{
+    transform: translateY(11px) rotate(45deg);
+    -webkit-transform: translateY(11px) rotate(45deg);
+}
+.btn_active >div:nth-child(2){
+    opacity: 0;
+}
+
+.btn_active > div:last-child{
+    transform: translateY(-11px) rotate(-45deg);
+    -webkit-transform: translateY(-11px) rotate(-45deg);
+}
+
+
+/* nav bar */
+.navbar{
+    width: 160px;
+    min-height: 100vh;
+    background-color: #000000;
+    position: absolute;
+    top: 0px;
+    left: -160px;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    z-index: 999;
+    transition: 1s all;
+
+}
+.navbar_active{
+    left: 0px;
+}
+.navbar>a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 26px;
+    transition: .3s ease-in;
+    word-break: break-all;
+}
+.navbar>a:hover{
+    color: #b8abab;
+}
+
+.navBG{
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    background: transparent;
+    z-index: -10;
+    top: 0px;
+    left: 0px;
+    transition: 1s all;
+}
+
+.navBG_active{
+    background: #000000c9;
+    z-index: 99;
+}
+
+/* section_1 */
+.section_1{
+    width: 100%;
+    min-height: calc(200vh - 120px);
+    background-color: #2d3d46;
+    padding: 30px 5%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.section1_row1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.section1_row1>h1{
+    font-size: 80px;
+    width: 100%;
+    word-break: break-all;
+}
+.section1_row1>p{
+    max-width: 400px;
+    word-break: break-all;
+    font-size: 1.2rem;
+}
+.section1_row2{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.section1_row2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section1_row2 div{
+    width: 25%;
+}
+.sec1_row_items1{
+    min-height: 400px;
+    align-self: center;
+}
+.sec1_row_items2{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sec1_row_items2 img{
+   min-height: 400px;
+}
+.sec1_row_items3{
+    display: flex;
+    flex-direction: column;
+    grid-area: 20px;
+    justify-content: end;
+}
+.sec1_row_items4{
+    padding: 80px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: 40px;
+}
+.sec1_row_items4 ol{
+     align-self: center;
+     font-size: 1.2rem;
+     
+}
+ol>li{
+    min-height: 35px;
+}
+.sec1_row_items4 img{
+    min-height: 500px; 
+} 
+/* .section_2 */
+
+.section_2{
+    width: 100%;
+    min-height: 100vh;
+    background: #ffffff;
+    padding: 30px 5%;
+    color: #030303;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.sect_1{
+    width: 40%;
+    min-height: 80vh;
+    margin: 10px 20px ;
+}
+.sect_1>h1{
+    font-size: 80px;
+    width: 100%;
+    word-break: break-all;
+}
+.sect_1>p{
+    max-width: 400px;
+    word-break: break-all;
+    font-size: 1.2rem;
+}
+
+
+.sect_1>button{
+    font-size: 16px;
+    width: 60%;
+    min-height: 5vh;
+    margin-left: 20px;
+    background-color: #000000;
+    color: #fff;
+    margin-top: 30px;
+    cursor: pointer;
+   
+}
+button:hover{
+    background-color: #838181;
+    color: #000000;
+    border:2px solid #838181;
+}
+
+.sect_2> img{
+    width:80%;
+    min-height: 80vh;
+    padding: 40px 25px ;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    object-fit: cover;
+}
+.sect_2{
+    width: 50%;
+    min-height: 80vh;
+    border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+    background: rgb(255, 155, 6);
+     background-size: cover;
+    background-position: center; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+    animation: animacya 3.7s linear infinite;
+}
+
+@keyframes animacya{
+    0%, 100% {
+        border-radius:
+            42% 56% 72% 28% / 42% 42% 56% 48%;
+    }
+
+    33% {
+        border-radius:
+            42% 28% 48% 48% / 28% 28% 72% 72%;
+    }
+
+    77% {
+        border-radius:
+            100% 56% 56% 100% / 100% 100% 56% 56%;
+    }
+}
+/* .section_3 */
+.section_3{
+    width: 100%;
+    background:url('../img/1666014329_1-gamerwall-pro-p-gori-na-rabochii-stol-pinterest-1.jpg') no-repeat center center;
+    min-height: 130vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.sect_22{
+    width: 25%;
+    min-height: 650px;
+    margin-top: 100px;
+}
+.sect_23{
+    width: 24%;
+    min-height: 720px;
+    align-self: center;
+    margin-top: 50px;
+
+}
+.sect_24{
+    width: 25%;
+    min-height: 350px;
+    align-self: center;
+
+}
+.imgg1{
+    min-height: 55px;
+    width: 100%;
+    
+}
+.hpsty1{
+    min-height: 55px;
+    width: 100%;
+    background-color: #1d1b1b;
+    color: #fff;
+    font-size: 35px;
+
+}
+.imgg2{
+    min-height: 55px;
+    width: 100%;
+}
+.hpsty2{
+    min-height: 60px;
+    width: 100%;
+    background-color: #e9e7e7;
+}
+.hpsty2>h1{
+    font-size: 40px;
+    margin-left: 20px;
+    padding-top: 15px;
+    word-break: break-all;
+}
+.hpsty2>p{
+    font-size: 18px;
+    margin-left: 20px;
+    word-break: break-all;
+}
+.imgg3{
+    width: 100%;
+    min-height: 100px;
+    object-fit: cover
+}
+.imgg4{
+    width: 100%;
+    min-height: 100px;
+    object-fit: cover
+}
+.imgg5{
+    width: 100%;
+    min-height: 100px;
+    object-fit: cover
+}
+.hpsty1>h1{
+    font-size: 250x;
+    padding-left: 25px;
+    word-break: break-all;
+}
+.hpsty1>p{
+    margin-left: 25px;
+    word-break: break-all;
+}
+.hpsty2>p>span>a{
+    color: #000000;
+    word-break: break-all;
+}
+.butt{
+    font-size: 16px;
+    width: 60%;
+    min-height: 5vh;
+    margin-left: 20px;
+    background-color: #000000;
+    color: #fff;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.butt:hover{
+    background-color: #838181;
+    color: #000000;
+    border:2px solid #838181;
+}
+/* section_4 */
+ 
+.section_4{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.gsw{
+    padding-top: 25vh;
+    width: 40%;
+    min-height: 80vh;
+    margin: 10px 20px ;
+}
+.gsw>h1{
+    font-size: 80px;
+    width: 100%;
+    word-break: break-all;
+}
+.gsw>p{
+    max-width: 400px;
+    word-break: break-all;
+    font-size: 1.2rem;
+}
+
+.gsw>button{
+    font-size: 16px;
+    max-width: 60%;
+    height: 5vh;
+    left: 20px;
+    background-color: #000000;
+    color: #fff;
+    margin-top: 30px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #838181;
+    color: #000000;
+    border:2px solid #838181;
+}
+/* section_5 */
+.section_5{
+    min-height: 150vh;
+    width: 100%;
+    background:url('../img/img12/1665765047_1-gamerwall-pro-p-gori-zimoi-oboi-1.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.maoy1{
+    margin-top: 10vh;
+    width: 20%;
+    min-height: 120vh;
+}
+.maoy2{
+    margin-bottom: 20vh;
+    width: 20%;
+    min-height: 100vh;
+    
+}
+.maoy3{
+    margin-top: 10vh;
+    width: 20%;
+    min-height: 120vh;
+}
+.moya{
+   min-height: 80vh;
+    width: 100%;
+    background-color: rgb(255, 68, 0);
+    color: #fff;
+}
+.moya>h3{
+    font-size: 30px;
+    margin-left: 20px;
+    padding-top: 70px;
+    word-break: break-all;
+}
+.moya>p{
+    margin-left: 20px;
+    line-height: 24px;
+    font-size: 18px;
+    word-break: break-all;
+}
+.moya>span{
+    margin-left: 20px;
+    font-size: 18px;
+}
+.moya>span>a{
+    color: #fff;
+}
+.moya1{
+    min-height: 40vh;
+    width: 100%;
+}
+.imgg8{
+    min-height: 45vh;
+    width: 100%;
+}
+.imgg9{
+    height: 45vh;
+    width: 100%;
+}
+.imgg10{
+    min-height: 40%;
+    width: 100%;
+}
+.imgg11{
+    min-height: 60%;
+    width: 100%;
+    background-color: #fff;
+    color: #000000;
+}
+.imgg11>h3{
+    font-size: 30px;
+    margin-left: 20px;
+    padding-top: 70px;
+    word-break: break-all;
+}
+.imgg11>p{
+    margin-left: 20px;
+    line-height: 24px;
+    font-size: 18px;
+    word-break: break-all;
+}
+
+.nkar1{
+    width: 100%;
+    min-height: 40vh;
+    object-fit: cover;
+}
+.nkar2{
+    width: 100%;
+    min-height: 45vh;
+    object-fit: cover;
+}
+.nkar3{
+    width: 100%;
+    min-height: 40vh;
+    object-fit: cover;
+}
+.nkar4{
+    width: 100%;
+    min-height: 50vh;
+    object-fit: cover;
+}
+.butt2{
+    font-size: 16px;
+    width: 70%;
+    min-height: 55px;
+    margin-left: 20px;
+    background-color: #ffffff;
+    border: 2px solid white;
+    color: #2e2d2d;
+    margin-top: 30px;
+}
+.butt2:hover{
+    background-color: #ecdad2;
+    color: rgb(207, 145, 145);
+    border:2px solid #ecdad2;
+    cursor: pointer;
+}
+.butt5{
+    font-size: 16px;
+    width: 55%;
+    min-height: 55px;
+    margin-left: 20px;
+    background-color:orangered;
+    border: 2px solid orangered;
+    color: #fff;
+    margin-top: 30px;
+}
+.butt5:hover{
+    background-color: #000000;
+    color: #ffffff;
+    border:2px solid #000000;
+    cursor: pointer;
+}
+/* .section_6 */
+.section_6{
+      min-height: 150vh;
+      width: 100%;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .itemss{
+    flex-grow: 1;
+  
+  }
+  .itemss:nth-child(2){
+    align-self: center;
+  
+  }
+  .itemss:nth-child(3){
+    align-self: center;
+
+  }
+ .nk1{
+    width: 100%;
+    min-height: 50vh;
+    object-fit: cover;
+    padding-left: 8vh;
+ }
+ .nk2{
+    width: 100%;
+    min-height: 50vh;
+    object-fit: cover;
+ }
+ .nk3{
+    width: 100%;
+    min-height: 50vh;
+    object-fit: cover;
+    padding-right: 8vh;
+   
+ }
+ .itmss1{
+    width: 100%;
+    padding-left: 5vh;
+    background-color: #fff;
+    color: #000000;
+    word-break: break-all;
+   
+ }
+ .itmss1>p{
+    font-size: 40px;
+    padding-left: 15vh;
+    line-height: 8vh;
+    word-break: break-all;
+    justify-content: center;
+}
+.itmss1>h1{
+    padding-left: 15vh;
+    line-height: 24px;
+    width: 70%;
+    font-size: 17px;
+    word-break: break-all;
+}
+/* .section_7 */
+.section_7{
+    min-height: 150vh;
+    width: 100%;
+    background:url('../img/img12/1648698995_1-gamerwall-pro-p-fon-gori-v-tumane-krasivie-1.jpg') no-repeat center center ; ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vso{
+    display: flex;
+    margin-left: 5vh;
+    width: 80%;
+    min-height: 100vh;
+    background-color: #e9e7e7;
+
+}
+.vso1{
+    margin-bottom: 20vh;
+    width: 50%;
+   min-height: 100vh;
+   
+    
+}
+.vso2{
+    width: 50%;
+    min-height: 100vh;
+  
+}
+
+.vso1>img{
+     border-radius: 100%;
+     width: 50%;
+     min-height: 45vh;
+     object-fit: cover;
+     margin-left: 15vh;
+     margin-top: 15vh;
+
+}
+.vso1>p{
+     max-width: 100%;
+     padding-left: 15vh;
+     font-size: 8vh;
+     margin-top: 5vh;
+     word-break: break-all;
+}
+.vso2>p{
+     max-width: 90%;
+     padding-left: 5vh;
+     font-size: 3vh;
+     margin-top: 5vh;
+     word-break: break-all;
+     color: #838181;
+}
+.vso2>h1{
+     max-width: 90%;
+     padding-left: 5vh;
+     font-size: 3vh;
+     margin-top: 5vh;
+     word-break: break-all;
+     color: #838181;
+}
+.vso2>h2{
+     max-width: 90%;
+     padding-left: 20vh;
+     font-size: 3vh;
+     margin-top: 10vh;
+     word-break: break-all;
+     color: #838181;
+}
+.vso2>a{
+     max-width: 90%;
+     padding-left: 15vh;
+     top: 5vh;
+     font-size: 5vh;
+     word-break: break-all;
+     color: #000000;
+     text-decoration: none;
+     transform: 5s all;
+}
+.vso2>a:hover{
+    color: rgb(248, 42, 6);
+}
+
+   /* section_8 */
+
+.section_8 {
+    min-height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2e2d2d;
+    text-decoration: none;
+}
+.section_8>h1{
+     width: 90%;
+     margin-left: 35%;;
+     top: 5vh;
+     font-size: 5vh;
+     word-break: break-all;
+     color: #ffffff;
+     text-decoration: none;
+     transition: 2s all;
+}
+.section_8>h1:hover{
+    color: burlywood;
+}

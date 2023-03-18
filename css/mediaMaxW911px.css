@@ -1,0 +1,115 @@
+.section_1{
+    flex-wrap: wrap;
+   
+}
+.section_1 div{
+    width:100%;
+}
+.section_2{
+    flex-wrap: wrap;
+    
+}
+.section_2 div{
+    width:100%;
+}
+.section_3{
+    flex-wrap: wrap;
+    
+}
+.section_3 div{
+    width: 100%;
+}
+.section_4{
+    flex-wrap: wrap;
+  
+}
+.section_4 div{
+    width: 100%;
+}
+.section_5{
+    flex-wrap: wrap;
+  
+}
+.section_5{
+    width: 100%;
+}
+.section_6{
+    flex-wrap: wrap;
+   
+}
+.section_6 div{
+    width: 100%;
+}
+.section_7 div{
+    width: 100%;
+}
+.section_7{
+    flex-wrap: wrap;
+  
+}
+.section_8{
+    flex-wrap: wrap;
+   
+}
+.section_8 div{
+    width: 100%;
+}
+.section_7>.img3{
+    width: 100%;
+    flex-direction: column;
+}
+.section_7>.img4{
+    width: 100%;
+    flex-direction: column;
+}
+s
+/* section_9 */
+ .section_9{
+    flex-wrap: wrap;
+ 
+}
+.section_9 div{
+    width: 100%;
+}
+.section_10{
+    flex-wrap: wrap;
+    
+}
+.section_10 div{
+    width: 100%;
+}
+header div{
+    width: 100%;
+}
+header{
+    flex-wrap: wrap;
+    
+} 
+@media screen and (max-width:991px) {
+    .section_1{
+     flex-direction: column;
+    } 
+    .section_1>div{
+     width: 100%;
+    }
+ }
+ @media screen and (max-width:575px) {
+     .sec_1_content{
+         padding: 10px 20px;
+     }
+    .sec_1_images{
+     flex-direction: column;
+    }
+    .sec_1_images>img{
+     width: 100%;
+    } 
+ }
+ @media screen and (orientation:landscape) {
+     .sec_1_items1{
+         min-height: 500px;
+     }
+     .sec_1_content{
+         padding: 30px;
+     }
+     
+ }

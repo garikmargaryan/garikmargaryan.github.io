@@ -1,0 +1,93 @@
+.section1_row2{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section1_row2 div{
+    width: 100%;
+}
+
+.section_2{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section_2 div{
+    width: 100%;
+}
+.section_1{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section_1 div{
+    width:100%;
+}
+/* section 6*/
+.section_6{
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.section_6 div{
+    width: 100%;
+}
+.section_4{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section_4 div{
+    width: 100%;
+}
+.section_3{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section_3 div{
+    width: 100%;
+}
+.section_5{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section_5 div{
+    width: 100%;
+}
+.section_7{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section_7 div{
+    width: 100%;
+}
+.section_8{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section_8 div{
+    width: 100%;
+}
+header{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+header div{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gsw{
+    width: 100%;
+}
+.sec1_row_items4 ol{
+    width: 100%;
+    
+
+}
+.sec1_row_items4 ol{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.vso2{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.vso2 p{
+   width:100%;
+}
